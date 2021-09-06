@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project name="TestNg Test"  basedir=".">
+        <target name="test1">
+                <echo>TestNG Test</echo>
+        </target>
+
+        <target name="test2">
+                <echo>TestNG Test test2</echo>
+        </target>
+
+        <target name="delete">
+                <delete dir="bini" />
+                <delete dir="srcr" />
+        </target>
+
+        <target name="create" depends="delete">
+                <mkdir dir="bini" />
+                <mkdir dir="srcr" />
+        </target>
+
+</project>
+
